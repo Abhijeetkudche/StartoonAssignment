@@ -6,6 +6,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from './Components/Screens/Login';
 import Signup from './Components/Screens/Signup';
 import OTP from './Components/Screens/OTP'
+import OTPS from './Components/Screens/OTPS';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="OTP" component={OTP} />
+        <Stack.Screen name="OTP" component={OTPS} />
       </Stack.Navigator>
     </NavigationContainer>
   );
